@@ -1,0 +1,19 @@
+//PALETA DE COLORES
+$negro: #333333;
+$rojo: #ff0001;
+$blanco: rgb(241, 241, 241);
+//FUENTES
+$titulo: 'Staatliches', cursive;
+//TITULOS
+@mixin titulos {
+    margin-top: 5rem;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: $titulo !important;
+    @media screen and (max-width:1023px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width:424px) {
+        font-size: 2.5rem !important;
+    }
+}
